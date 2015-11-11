@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>{$media.title} </title>
+    <meta name="keywords" content="{$media.keywords}" />
+    <meta name="description" content="{$media.description}" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="__TPL__/assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="__TPL__/assets/css/jinghuimeng.css">
+    <!--[if lt IE 9]>
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+    <script src="__TPL__/assets/js/amazeui.ie8polyfill.min.js"></script>
+    <![endif]-->
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script src="__TPL__/assets/js/jquery.min.js"></script>
+    <!--<![endif]-->
+    <script src="__TPL__/assets/js/amazeui.min.js"></script>
+</head>
+<body>
+<!--#include file="header.html"-->
+<div class="main">
+    <div class="am-container am-g">
+        <div class="am-u-sm-3 page-left">
+            <div class="title">
+                <i class="am-icon-map-marker"></i>
+                <span>
+                    新闻资讯
+                </span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <!--list{app="DuxCms" label="categoryList" parent_id=1 limit=10}-->
+                    <li><a href="{$list.curl}" title="{$list.name}">{$list.name}</a></li>
+                    <!--{/list}-->
+                </ul>
+            </div>
+            <div class="desc">
+                <!--echo{app="DuxCms" label="fragment" mark="page_adv" }-->
+            </div>
+        </div>
+        <div class="am-u-sm-9 page-right">
+            <div class="title">
+                <i class="am-icon-map-marker"></i>
+                <span>
+                首页
+                <!--foreach{$crumb as $vo}-->
+                 &gt; <a href="{$vo.url}">{$vo.name}</a>
+                <!--{/foreach}-->
+                </span>
+            </div>
+            <div class="list">
+                <ul>
+                    <!--foreach{$pageList as $vo}-->
+                    <li><a href="{$vo.aurl}" title="{$vo.title}"><i class="am-icon-angle-right am-icon-fw"></i>{$vo.title}</a><span class="date">{date('m-d',$vo.time)}</span></li>
+                    <!--{/foreach}-->
+                </ul>
+            </div>
+            <div class="list-page">{$page} </div>
+        </div>
+    </div>
+</div>
+<!--#include file="footer.html"-->
+</body>
+</html>

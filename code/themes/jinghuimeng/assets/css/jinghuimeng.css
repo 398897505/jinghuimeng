@@ -1,6 +1,7 @@
 a {color:#5a5a5a;text-decoration:none;outline:none;}
 a:hover {color:#0064d4;}
 
+/* 顶部 */
 .header .topbar {height:90px;}
 .header .logo {width: 240px; height: 60px; margin: 15px 0 0;}
 .header .nav {background: #090; height:50px;}
@@ -22,6 +23,7 @@ a:hover {color:#0064d4;}
 .header .search .input:focus,.header .search select:focus {border: none; background: none; box-shadow: none;}
 .header .search .button {background: #090;border-color: #090; color: #FFF;height: 28px;}
 
+/* 首页 */
 .main {margin:20px 0 0 0;font-size:1.4rem;}
 .main .news {font-size: 1.2rem; padding-right: 2rem;}
 .main .news .title {height:3.2rem; border-bottom: 2px solid #090;line-height: 3.2rem;font-size: 1.4rem;color:#090;}
@@ -29,12 +31,12 @@ a:hover {color:#0064d4;}
 .main .news .title i {margin-right:5px;}
 .main .news .title .more {font-size: 1.2rem;float: right;margin-right:5px;}
 .main .news .list {overflow: hidden;}
-.main .news .list a {display:inline-block;height:26px; line-height: 26px;padding:0;float: left;}
+.main .news .list a {display:inline-block;height:26px; line-height: 26px;padding:0;float: left; width:245px;}
 .main .news .list ul {list-style: outside none none; padding-top: 10px;margin-bottom: 0;}
 .main .news .list ul li {border:none;height:26px;overflow: hidden;}
 .main .news .date {float:right; font-size: 1rem;line-height: 26px;}
 
-.main .icons {width:48%; float: left; padding:10px;margin-left:5px;}
+.main .icons {width:48%; float: left; padding:10px 10px 0 10px;margin-left:5px;}
 .main .icons .icon {font-size: 300%;}
 .main .icons .pic {height:120px;}
 .main .icons .txt h2, .main .icons .txt p {font-size:1.4rem;text-align: center;}
@@ -61,8 +63,55 @@ a:hover {color:#0064d4;}
 .main .zp h2 {color:red;margin-bottom: 0;}
 .main .zp p {margin-top:10px;}
 .main .zp .txt, .main .lxfs .txt {float:right;}
+.main .lxfs .txt {margin-top: 10px;}
 .main .lxfs .pic {width:160px; height:130px;}
 
+/* 静态页面 */
+.main .page-left, .main .page-right {font-size: 1.2rem; padding-right: 2rem;}
+.main .page-left {padding-left:0;}
+.main .page-right {padding-left:4rem;padding-right: 0;}
+.main .page-left .title {height:3.8rem; border-bottom: 2px solid #090;line-height: 3.6rem;font-size: 1.4rem;color:#090;}
+.main .page-left .title i {margin-right:10px;}
+.main .page-left .title .more {font-size: 1.2rem;float: right;margin-right:5px;}
+.main .page-left .nav {overflow: hidden;margin-top:5px;font-size: 1.4rem;}
+.main .page-left .nav a {height:40px; line-height: 40px;text-align: center;background: #eee;margin:0;display: block;color:#090;}
+.main .page-left .nav a:hover {background: #fff;color:#000}
+.main .page-left .nav ul {list-style: outside none none; padding:0;margin:0;}
+.main .page-left .nav ul li {border-bottom: 1px solid #ccc;text-align: center}
+.main .page-left .desc {background:#090;margin-top:5px;color:#eee;font-size:1.4rem;padding:1rem;}
+.main .page-left .desc h3 {margin-top:10px; font-size:1.6rem;}
+.main .page-left .desc p {line-height: 2.4rem;}
+.main .page-right .title {height:3.8rem; border-bottom: 2px solid #000;line-height: 3.6rem;font-size: 1.4rem;color:#000;}
+.main .page-right .title i {margin-right:10px;}
+.main .page-right .title .more {font-size: 1.2rem;float: right;margin-right:5px;}
+.main .page-right .title a {color:#000;}
+.main .page-right .title a:hover {color:#090;}
+.main .pagecontent {margin-top:20px;}
+.main .pagecontent p {color: #333;  font-size: 14px;  line-height: 26px;  padding-bottom: 10px;}
+
+/* 内容页 */
+.main .pagecontent h1 {color: #090;  font-size: 2.6rem;  font-weight: normal;  max-width: 900px;  padding: 5px 0; text-align: center; margin-bottom: 10px;}
+.main .pagecontent .info {text-align: right; font-size: 1.4rem;}
+.main .pagecontent .description {border: 1px solid #ccc; background: #eee;line-height:26px;font-size: 1.4rem;padding:10px;margin-top:10px;}
+.main .pagecontent .content {font-size: 1.4rem; margin:20px 0;}
+.main .pagecontent .content p {color: #333;  font-size: 1.4rem;  line-height: 26px;  padding-bottom: 10px;}
+.main .pagecontent .last,.main .pagecontent .next {font-size: 1.4rem;margin-top:5px;}
+
+/* 列表页 */
+.main .page-right .list {overflow: hidden;font-size: 1.4rem;}
+.main .page-right .list a {display:inline-block;padding:0;float: left;}
+.main .page-right .list ul {list-style: outside none none;padding:0;margin:10px 0;}
+.main .page-right .list ul li {border:none;overflow: hidden; padding:5px 0; height: 50px;line-height: 50px;border-bottom:1px dashed #eee;}
+.main .page-right .list .date {float:right; }
+.main .page-right .list-page {margin-top:20px;font-size: 1.4rem;overflow: hidden;}
+.main .page-right .list-page .dux-page {float:right;}
+.main .page-right .list-page a { float:left; background:#999; padding-left:10px; padding-right:10px; height:32px; line-height:32px; text-align:center; display:block; margin-right:4px; color:#fff; text-decoration:none; font-weight:bold;}
+.main .page-right .list-page span { float:left; width:37px; height:32px; line-height:32px; text-align:center; display:block; margin-right:4px; color:#999;}
+.main .page-right .list-page a:hover { background:#090;}
+.main .page-right .list-page .active-page {background:#090;}
+.main .page-right .list-page .hidden { display:none;}
+
+/* 底部 */
 .footer {background: #666; font-size: 1.2rem; color:#fff;margin-top:20px;height:140px;}
 .footer p {margin:0;line-height: 32px;}
 .footer .copyright {padding: 20px 0 20px 70px;}

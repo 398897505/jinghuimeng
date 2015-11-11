@@ -1,0 +1,45 @@
+<script>
+    $(function(){
+        $('#navbar > li').hover(function(){
+            $('#navbar > li').removeClass('actived');
+            $('#navbar').find('.dropdown').hide();
+            $(this).addClass('actived');
+            $(this).find('.dropdown').show();
+        });
+    });
+</script>
+<div class="header">
+    <div class="am-container topbar">
+        <div class="logo am-fl" style="background:#eee;"><!--echo{app="DuxCms" label="fragment" mark="header_logo" }--></div>
+        <div class="search am-fr">
+            <form class="am-form" action="{url('Article/Search/index')}" method="post">
+                <select name="model" class="select am-fl">
+                    <option value="0">标题</option>
+                    <option value="1">内容</option>
+                </select>
+                <input type="text" class="input am-fl" name="keyword" value="" placeholder="请输入关键字" />
+                <button type="button" class="am-btn button am-btn-xs submit am-fr">搜索</button>
+            </form>
+        </div>
+    </div>
+    <div class="nav">
+        <ul class="am-container navbar" id="navbar">
+            <li class="am-fl actived">
+                <a href="__ROOT__/" title="京徽蒙">网站首页</a>
+            </li>
+            <!--channel{app="DuxCms" label="categoryList" parent_id=0  limit=5 order="sequence"}-->
+            <li class="am-fl">
+                <a href="{$channel.curl}" title="{$channel.name}">{$channel.name}</a>
+                <ul class="dropdown">
+                    <!--list{app="DuxCms" label="categoryList" parent_id=$channel['class_id'] limit=10}-->
+                    <li class="am-fl"><a href="{$list.curl}" title="{$list.name}">{$list.name}</a></li>
+                    <!--{/list}-->
+                </ul>
+            </li>
+            <!--{/channel}-->
+        </ul>
+    </div>
+    <div class="banner">
+        <a href="" title="" target="_blank"><img src="__TPL__/assets/images/banner.png" class="am-img-responsive" title="" alt="" /></a>
+    </div>
+</div>
