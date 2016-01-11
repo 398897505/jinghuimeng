@@ -1,4 +1,4 @@
-<?php exit;?>001478789060cd5f02fe9bf7a027511de8ab7fe24a41s:5906:"a:2:{s:8:"template";s:5842:"<!doctype html>
+<?php exit;?>001484059380d0d50dd6302a64e63f0c7f8154bb3d68s:5906:"a:2:{s:8:"template";s:5842:"<!doctype html>
 <html class="no-js">
 <head>
     <meta charset="utf-8">
@@ -117,4 +117,4 @@
 <?php $__Template->display("themes/jinghuimeng/footer"); ?>
 </body>
 </html>
-";s:12:"compile_time";i:1447253060;}";
+";s:12:"compile_time";i:1452523380;}";
